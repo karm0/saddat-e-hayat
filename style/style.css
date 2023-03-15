@@ -192,6 +192,10 @@ header{
   height: 100%;
   object-fit: cover;
 }
+.swiper-button-next,
+.swiper-button-prev{
+  margin: 0 3vw;
+}
 /* end pictures */
 
 /* start about */
@@ -273,3 +277,24 @@ header{
 /* start Disaster  */
 
 /* end Disaster  */
+
+
+
+/* start slider-bar */
+.containt-slider{
+  width: 80%;
+  margin-top: 5vw;
+}
+.containt-slider h2{
+  font-size: 1.3em;
+  padding: 1.5vw 0;
+}
+.containt-slider p{
+  font-size: 1em;
+  padding-bottom: 1.5vw;
+}
+.containt-slider button{
+  padding: .5em;
+  font-size: 1em;
+}
+/* end slider-bar */
