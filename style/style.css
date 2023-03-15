@@ -35,7 +35,7 @@ header{
   flex-wrap: wrap;
   background: #FFFFFF;
   z-index: 222;
-  width: 100%;
+  width: 100vw;
   padding: 1rem;
   border-bottom: 2px solid #8ac873;
 }
@@ -95,6 +95,7 @@ header{
   flex-direction: column;
   background: #8ac873;
   transition: all .8s linear;
+  z-index: 10000;
 }
 #navList a{
   font-size: 1.5em;
@@ -169,7 +170,6 @@ header{
 
 /* start pictures */
 .pictures{
-  padding-top: 7vw;
   height: 80vh;
 }
 .swiper {
@@ -281,9 +281,22 @@ header{
 
 
 /* start slider-bar */
-.containt-slider{
+.slider-bar{
+  background-color: #eee;
+  width: 100%;
+}
+.slider-bar .swiper{
   width: 80%;
+}
+.swiper .swiper-slide{
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 5vw;
+}
+.containt-slider{
+  width: 100%;
 }
 .containt-slider h2{
   font-size: 1.3em;
@@ -293,8 +306,32 @@ header{
   font-size: 1em;
   padding-bottom: 1.5vw;
 }
+.btn-donate{
+  margin: auto;
+}
 .containt-slider button{
   padding: .5em;
   font-size: 1em;
+  margin: 4vw 0;
 }
 /* end slider-bar */
+
+
+
+@media (max-width:600px){
+  .slider-bar .swiper{
+    width: 100%;
+  }
+  .containt-slider h2{
+    font-size: .9em;
+    padding: 2vw 0;
+  }
+  .containt-slider p{
+    font-size: .7em;
+    padding-bottom: 3vw;
+  }
+  .containt-slider button{
+    padding: .5em;
+    font-size: .8em;
+  }
+}
