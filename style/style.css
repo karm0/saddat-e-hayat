@@ -164,6 +164,7 @@ header{
     font-size: 1.5em;
     padding: 1vw 5vw;
   }
+  
 }
 /* end header */
 
@@ -260,6 +261,11 @@ header{
 }
 .donates .child img{
   width: 80%;
+  transition: 0.3s;
+  filter: grayscale(100%);
+}
+.donates .child:hover img{
+  filter: grayscale(0);
 }
 .child h1{
   font-size: 2.5em;
@@ -294,6 +300,7 @@ header{
   justify-content: space-around;
   align-items: center;
   margin-top: 5vw;
+  overflow: hidden;
 }
 .containt-slider{
   width: 100%;
@@ -314,8 +321,10 @@ header{
   font-size: 1em;
   margin: 4vw 0;
 }
-/* end slider-bar */
-
+.slider-bar .swiper-slide:hover img{
+  transform: scale(1.1);
+  transition: 1s;
+}
 
 
 @media (max-width:600px){
@@ -333,5 +342,38 @@ header{
   .containt-slider button{
     padding: .5em;
     font-size: .8em;
+  }
+}
+/* end slider-bar */
+
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #8ac873;
+  color: #fff;
+  margin-top: 3vw;
+  padding: 2vw 1vw;
+  position: relative;
+  bottom: -1%;
+}
+.footer .emial{
+  font-size: 1.7em;
+}
+.footer .copyright{
+  font-size: 1.7em;
+  color: #fff;
+}
+@media (max-width: 767px){
+  footer{
+    justify-content: space-between;
+  }
+  .footer .emial{
+    font-size: 1em;
+  }
+  .footer .copyright{
+    font-size: 1em;
   }
 }
