@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/styleContactUs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
       <a href="contactUs.html">Contact Us</a>
     </div>
     <div class="btn-donate">
-      <button type="button" class="click-donate">DONATE NOW <i class="fa-solid fa-hand-holding-dollar"></i></button>
+      <button type="button" id="click">DONATE NOW <i class="fa-solid fa-hand-holding-dollar"></i></button>
     </div>
     <div class="menu-bar" id="btnList">
       <i class="fa-solid fa-bars-staggered"></i>
@@ -52,5 +53,33 @@
         <img src="img/gif.gif">
     </div>
 </div>
+<!-- start pay -->
+<div class="pay">
+  <span class="close" id="closeDiv">x</span>
+  <div class="containt-pay"></div>
+</div>
+<!-- end pay -->
+<script>
+  let btnList = document.getElementById('btnList');
+
+btnList.addEventListener('click',()=>{
+  navList.classList.toggle('active')
+})
+
+let clickDonate = document.getElementById('click');
+let closeDiv = document.getElementById('closeDiv');
+let pay = document.querySelector('.pay')
+
+clickDonate.addEventListener('click', () => {
+  pay.classList.add('active2');
+})
+
+closeDiv.addEventListener('click',()=>{
+  pay.classList.remove('active2')
+})
+
+
+
+</script>
 </body>
 </html>
