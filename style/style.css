@@ -236,7 +236,8 @@ header{
 .about-text h2,p{
   padding: .5vw 1vw;
   font-size: 1.7em;
-  color: #000;
+  color: #71a65e;
+  font-weight: 600;
 }
 .about-img{
   width: 630px;
