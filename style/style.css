@@ -77,7 +77,6 @@ header{
 }
 .menu-bar{
   display: none;
-  overflow-x: hidden;
 }
 .menu-bar .fa-solid{
   font-size: 2.5em;
@@ -136,7 +135,6 @@ header{
   }
   .menu-bar{
     display: flex;
-    overflow-x: hidden;
   }
   .btn-donate{
     margin-left: -5rem;
