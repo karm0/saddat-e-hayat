@@ -53,3 +53,4 @@ prevBtn.addEventListener('click', slideLeft);
 nextBtn.addEventListener('click', slideRight);
 
 setInterval(slideRight, 2000);
+ 
